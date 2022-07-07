@@ -52,6 +52,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'test-web-app-aca'
-          slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_b2a7dfc9b96e40a3bf1b1ae304d07d3d }}
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           package: .
